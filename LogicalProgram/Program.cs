@@ -13,7 +13,7 @@ namespace LogicalProgram
             Console.WriteLine("2: For checking Perfect number");
             Console.WriteLine("3: For finding prime number");
             Console.WriteLine("4: For finding reverse number");
-
+            Console.WriteLine("5: For Calculating time duration");
             int check = Convert.ToInt32((string)Console.ReadLine());
             switch (check)
             {
@@ -33,6 +33,10 @@ namespace LogicalProgram
                 case 4:
                     ReverseNumber reverseNumber = new ReverseNumber();
                     reverseNumber.ReverseNum();
+                    break;
+                case 5:
+                    StopwatchTimeCalcu stopwatchTimeCalcu = new StopwatchTimeCalcu();
+                    stopwatchTimeCalcu.StopwatchCal();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
