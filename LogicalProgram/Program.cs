@@ -7,9 +7,12 @@ namespace LogicalProgram
         static void Main(string[] args)
         {
 
+            Console.WriteLine("Hello");
             Console.WriteLine("Please enter number as per options");
-            Console.WriteLine("1: For Flip a coin and find % of Head and Tail");
-            Console.WriteLine("2: For checking leap year");
+            Console.WriteLine("1: For Fibonacci series");
+            Console.WriteLine("2: For checking Perfect number");
+            Console.WriteLine("3: For finding prime number");
+
             int check = Convert.ToInt32((string)Console.ReadLine());
             switch (check)
             {
@@ -22,10 +25,16 @@ namespace LogicalProgram
                     PerfectNum perfectNum = new PerfectNum();
                     perfectNum.Perfect_Num();
                     break;
+                case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.PrimeNum();
+                    break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
                     break;
 
             }
+
         }
+    }
 }
