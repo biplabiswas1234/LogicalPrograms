@@ -14,6 +14,7 @@ namespace LogicalProgram
             Console.WriteLine("3: For finding prime number");
             Console.WriteLine("4: For finding reverse number");
             Console.WriteLine("5: For Calculating time duration");
+            Console.WriteLine("6: For Coupon number generation");
             int check = Convert.ToInt32((string)Console.ReadLine());
             switch (check)
             {
@@ -37,6 +38,11 @@ namespace LogicalProgram
                 case 5:
                     StopwatchTimeCalcu stopwatchTimeCalcu = new StopwatchTimeCalcu();
                     stopwatchTimeCalcu.StopwatchCal();
+                    break;
+                case 6:
+                    Coupon coupon = new Coupon();
+                    coupon.CouponGen();
+
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");

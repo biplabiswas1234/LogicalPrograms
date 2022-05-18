@@ -18,7 +18,7 @@ namespace LogicalProgram
                 Reverse = (Reverse * 10) + Remainder;
                 num = num / 10;
             }
-            Console.WriteLine("Reverse of the number {0} is: {1}", Temp,Reverse );
+            Console.WriteLine("Reverse of the number {0} is: {1}", Temp, Reverse);
         }
     }
 }
